@@ -1,0 +1,761 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+
+}
+::selection{
+    background-color: yellow;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+/************************** Navbar manu Start *********************************/
+.notes{
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 
+              0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 
+              0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 
+              0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 
+              0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 
+              0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+}
+nav:hover {
+    background: blue;
+}
+.navbarBgC{
+  background: rgba(19, 18, 18, 0.4);
+}
+
+.navbar-nav{
+    margin-left: auto;
+    text-align: center;
+}
+
+.navbar-nav li a{
+    margin-right: 50px;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+    padding: 15px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-sizing: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.nav-item:hover{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(31, 28, 28, 0.1);
+    z-index: none;
+    overflow: hidden;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+/* .state when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -28px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 28px;
+    transform: rotate(0deg);
+}
+
+/* color of 3 lines */
+.navbar-toggler.collapsed .toggler-icon {
+    background: linear-gradient(263deg, rgba(252, 74, 74, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+/**************************************** HOME PART START ****************************************/
+.home_part {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(31, 28, 28, 0.5),
+        rgba(31, 28, 28, 0.5)
+      ), url("b19.png");
+    /* background-image:url(images/b19.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: wheat;
+}
+
+.home_header{
+  /* margin-left: 80px; */
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 0 0 0 20px;
+}
+
+.row_right{
+    padding: 10px;
+}
+
+.row_right h1{
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.row_right p{
+    color: white;
+    font-weight: 900;
+}
+
+.row_right button{
+    color: white;
+    font-weight: 900;
+    border-color: white;
+    margin-right: 25px;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 30%;
+    text-align: center;
+}
+
+.row_left a{
+    margin-left: 20px;
+}
+
+.fa-brands{
+    color:white;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.fa_facebook{
+  padding: 15px;
+  background: rgba(0, 212, 255, 0.3);
+  border-radius: 50%;
+}
+
+.fa_facebook:hover{
+  background: rgba(0, 212, 255, 1);
+}
+
+.fa_google{
+  padding: 15px;
+  background: rgba(11, 53, 240, 0.3);
+  border-radius: 50%;
+}
+
+.fa_google:hover{
+  background: rgba(11, 53, 240, 1);
+}
+
+.fa_youtube{
+  padding: 15px;
+  background: rgba(247, 10, 10, 0.3);
+  border-radius: 50%;
+}
+
+.fa_youtube:hover{
+  background: rgba(247, 10, 10, 1);
+}
+
+.fa_twitter{
+  padding: 15px;
+  background: rgba(4, 245, 85, 0.3);
+  border-radius: 50%;
+}
+
+.fa_twitter:hover{
+  background: rgba(4, 245, 85, 1);
+}
+
+.fa_instagram{
+  padding: 15px;
+  background: rgba(236, 124, 20, 0.3);
+  border-radius: 50%;
+}
+
+.fa_instagram:hover{
+  background: rgba(236, 124, 20, 1);
+}
+
+.fa_github{
+  padding: 15px;
+  background: rgba(19, 18, 18, 0.5);
+  border-radius: 50%;
+}
+
+.fa_github:hover{
+  background: rgba(19, 18, 18, 1);
+}
+
+
+  /*------------------------------ Service Pages Start -----------------------------------------*/
+  .service{
+    width: 100%;
+    height: auto;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIc-P31vBf27PrBFmwuqyqcxArCbWNaUI7_Q&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+  }
+  .service_haderDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .service_center .service_haderDiv h1{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    background: rgba(19, 18, 18, 0.1);
+    border-top: 2px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    box-shadow: 3px 67px 264px -9px rgba(41,88,212,0.86);
+    -webkit-box-shadow: 3px 67px 264px -9px rgba(41,88,212,0.86);
+    -moz-box-shadow: 3px 67px 264px -9px rgba(41,88,212,0.86);
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 
+                 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 
+                 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 
+                 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 
+                 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 
+                 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+  }
+  .service_center h1:hover{
+    background: rgba(231, 129, 163, 0.3);
+  }
+  .card_row2 .card_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  .card_row .card{
+    /* width: 100%;
+    height: 100vh; */
+    background: rgba(31, 28, 28, 0.1);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  /* .card:hover{
+    background: rgb(248, 246, 247, 1);
+    color: black;
+  } */
+
+  .card_row .card:hover{
+    background: rgb(248, 246, 247, 1);
+    color: black;
+    transition: 1s;
+    transform: translateY(-10px);
+    border: 2px solid blue;
+    box-shadow: 0px 21px 26px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 21px 26px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 21px 26px 3px rgba(0,0,0,0.75);
+  }
+
+  .card_row .card .card-body{
+    width: 100%;
+    height: auto;
+    border-top: 4px solid blue;
+    border-radius: 30px;
+  }
+  .card-body .card-title{
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .card-body .card-text{
+    font-size: 13px;
+    background: rgba(31, 28, 28, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .card_row2 .card_row .card img{
+    width: 100%;
+    height: 40vh;
+  }
+  .card_row2 .card_row .card .card-body h5{
+    font-size: 20px;
+  }
+  /* .card_row .card img::after{
+    content: "";
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background: rgba(90, 73, 240, 1);
+  } */
+  /*--------------------------- Service Pages end ----------------------------------------/
+
+  /*----------------------  registration template Pages Start -----------------------------*/
+  #registration_pages .registration_haderDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #registration_pages .registration_haderDiv h1{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    background: rgba(19, 18, 18, 0.1);
+    border-radius: 20px;
+    border-top: 2px solid blue;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    box-shadow: 3px 67px 264px -9px rgba(41,88,212,0.86);
+    -webkit-box-shadow: 3px 67px 264px -9px rgba(41,88,212,0.86);
+    -moz-box-shadow: 3px 67px 264px -9px rgba(41,88,212,0.86);
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 
+                 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 
+                 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 
+                 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 
+                 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 
+                 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+  }
+  .card-registration .card-body{
+    background: rgba(19, 18, 18, 0.5);
+    
+  }
+  .registration_section{
+    background: rgba(19, 18, 18, 0.4);
+    margin: 5px 0 0 0;
+  }
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+    /*----------------------  registration template Pages end -----------------------------*/
+
+
+    /* <!-----------------------------------  login form Pages start ----------------------------> */
+    #login_pages{
+      background-color: rgba(19, 18, 18, 0.4);
+      margin-top: 5px;
+    }
+    #login_pages .login_haderDiv{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #login_pages .login_haderDiv h1{
+      width: 30%;
+      height: auto;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 500;
+      background: rgba(19, 18, 18, 0.1);
+      border-radius: 20px;
+      border-top: 2px solid blue;
+      padding: 10px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      box-shadow: 3px 67px 264px -9px rgba(41,88,212,0.86);
+      -webkit-box-shadow: 3px 67px 264px -9px rgba(41,88,212,0.86);
+      -moz-box-shadow: 3px 67px 264px -9px rgba(41,88,212,0.86);
+      text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 
+                   0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 
+                   0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 
+                   0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 
+                   0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 
+                   0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+    }
+  
+      .login_form{
+        background-image: linear-gradient(
+          to bottom,
+          rgba(31, 28, 28, 0.5),
+          rgba(31, 28, 28, 0.5)
+        ), url(https://wallpaperaccess.com/full/5970463.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-clip: border-box;
+        background-origin: border-box;
+        color: white;
+        font-weight: lighter;
+        display: grid;
+        place-content: center;
+        padding: 50px 0;
+        margin: 5px 0 0 0;
+        animation: bgChang 60s infinite;
+      }
+
+      @keyframes bgChang {
+        0%{
+          background-image: linear-gradient(
+            to bottom,
+            rgba(31, 28, 28, 0.5),
+            rgba(31, 28, 28, 0.5)
+          ), url(https://wallpaperaccess.com/full/5970463.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-clip: border-box;
+          background-origin: border-box;
+        }
+
+        20%{
+          background-image: linear-gradient(
+            to bottom,
+            rgba(31, 28, 28, 0.5),
+            rgba(31, 28, 28, 0.5)
+          ), url(https://sayantansharba.files.wordpress.com/2020/06/img_20200602_220444.jpg?w=694&h=420&crop=1);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-clip: border-box;
+          background-origin: border-box;
+        }
+
+        40%{
+          background-image: linear-gradient(
+            to bottom,
+            rgba(31, 28, 28, 0.5),
+            rgba(31, 28, 28, 0.5)
+          ), url(https://cutewallpaper.org/23/waterfall-wallpaper-hd-1920x1080/1166326207.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-clip: border-box;
+          background-origin: border-box;
+        }
+
+        60%{
+          background-image: linear-gradient(
+            to bottom,
+            rgba(31, 28, 28, 0.5),
+            rgba(31, 28, 28, 0.5)
+          ), url(https://wallup.net/wp-content/uploads/2019/05/10/282262-parque-nacional-de-los-lagos-de-plitvice-croacia-waterfall.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-clip: border-box;
+          background-origin: border-box;
+        }
+
+        80%{
+          background-image: linear-gradient(
+            to bottom,
+            rgba(31, 28, 28, 0.5),
+            rgba(31, 28, 28, 0.5)
+          ), url(https://storge.pic2.me/c/1360x800/297/58b2cdaa26238.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-clip: border-box;
+          background-origin: border-box;
+        }
+
+        100%{
+          background-image: linear-gradient(
+            to bottom,
+            rgba(31, 28, 28, 0.5),
+            rgba(31, 28, 28, 0.5)
+          ), url(https://img.freepik.com/premium-photo/dearth-valley_328046-16749.jpg?w=2000);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-clip: border-box;
+          background-origin: border-box;
+        }
+      }
+
+      .login_form .text-center .btn-floating i{
+        color: white;
+        display: block;
+        width: 100%;
+        background: #d3531a;
+        border-radius: 50%50%;
+        opacity: 1;
+        left: 0;
+        transition: .25s ease-in-out;
+        padding: 10px;
+        align-items: center;
+        font-size: 9px;
+      }
+
+      .login_form .text-center .btn-floating i:hover{
+              color: yellow;
+      }
+
+  
+    /* <!----------------------------------- Category login form Pages end ----------------------------> */
+
+
+
+    /* <!----------------------------------- Category Footer pages  start ----------------------------> */
+
+    /* <!----------------------------------- Category Footer pages  end ----------------------------> */
+
+
+
+/********************************************** Midia Query responsives *************************************/
+
+/* Destop and leptop Devices */
+@media only screen and (min-width: 1024) {
+
+
+}
+
+
+/* tablete and iprad Devices */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+
+  /* <!----------- Home part start --------------> */
+    .home_header{
+      position: absolute;
+      top: 50%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+    }
+    .row_right button{
+      margin: 0 25px 0 0;
+  }
+  .btn_1{
+    margin: 0;
+  }
+  .row_left{
+      margin-top: 30px;
+  }
+  .row_left a{
+    margin: 0 20px 0 7px;
+  }
+  /* <!---------------- Home part end -------------> */
+
+
+  /*-------------------- Service Pages Start -----------*/
+  .service_center{
+    margin: 10px;
+  }
+  .service_center .service_haderDiv h1{
+    width: 40%;
+    height: auto;
+  }
+
+  /*---------------- Service Pages end ---------------------*/
+
+
+/*---------  registration template Pages Start ----------*/
+#registration_pages .registration_haderDiv h1{
+  width: 50%;
+  height: auto;
+}
+/*---------  registration template Pages Start ----------*/
+
+
+/*----------------- Login form pages start -----------------------*/
+#login_pages .login_haderDiv h1{
+  width: 50%;
+  height: auto;
+}
+/*----------------- Login form pages start -----------------------*/
+
+
+  
+
+}
+
+
+
+/* Mobile Phone Devices */
+@media only screen and (max-width: 768px) {
+
+  /* <!-------------- Home part start -----------------> */
+    .row_left a{
+      padding: 7px;
+    }
+
+    .home_header{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center; 
+    }
+    .row_right h1 {
+    font-size: 15px;
+  }
+  .row_right p{
+    font-size: 13px;
+    word-spacing: 5px;
+  }
+  .row_right button{
+      width: 100%;
+      height: auto;
+  }
+  .row_left a{
+      width: 100%;
+      height: auto;
+      margin-left: 7px;
+      font-size: 15px;
+      padding: 5px;
+  }
+  .btn_2{
+    margin-top: 20px;
+  }
+  .row_left{
+    margin-top: 30px;
+  }
+/* <!---------- Home part end -------------------> */
+
+
+
+/*-------------- Service Pages Start -----------*/
+  .service_center{
+  margin: 10px;
+}
+.service_center .service_haderDiv h1{
+  width: 70%;
+  height: auto;
+}
+/*-------- Service Pages end -------------*/
+
+
+/*---------  registration template Pages Start ----------*/
+#registration_pages .registration_haderDiv h1{
+  width: 100%;
+  margin: 0 10px;
+  height: auto;
+}
+/*---------  registration template Pages Start ----------*/
+
+
+/*----------------- Login form pages start -----------------------*/
+#login_pages .login_haderDiv h1{
+  width: 100%;
+  margin: 0 10px;
+  height: auto;
+}
+/*----------------- Login form pages start -----------------------*/
+}
+
+@media only screen and (max-width: 468px) {
+
+  /* <!----------- Home part start --------> */
+  .home_header{
+    margin: 0;
+    padding: 0;
+  }
+    .row_right button{
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      padding: 5px 80px;
+    }
+    .btn_2{
+      margin-top: 20px;
+    }
+    .row_left{
+      margin-top: 30px;
+    }
+  /* <!-------- Home part end ----------> */
+
+  /*-------------- Service Pages Start -----------*/
+  .service_center .service_haderDiv h1{
+    width: 80%;
+    height: auto;
+  }
+  /*-------- Service Pages end -------------*/
+  
+
+/*---------  registration template Pages Start ----------*/
+#registration_pages .registration_haderDiv h1{
+  width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+/*---------  registration template Pages Start ----------*/
+
+
+/*----------------- Login form pages start -----------------------*/
+#login_pages .login_haderDiv h1{
+  width: 100%;
+  margin: 0 10px;
+  height: auto;
+}
+/*----------------- Login form pages start -----------------------*/
+
+
+}
